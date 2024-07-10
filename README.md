@@ -20,4 +20,4 @@ Copiar Resultado: Si deseas copiar el texto resultante, haz clic en el botón "C
 
 
 Autores del Proyecto
-Este proyecto fue desarrollado por Daniel Lopez. Para cualquier consulta o sugerencia, contáctanos en daniel.lopez@gmail.com.
+Este  proyecto fue desarrollado por Daniel Lopez. Para cualquier consulta o sugerencia, contáctanos en daniel.lopez@gmail.com.
