@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header"><img src="./imagenes/Logo.png" alt="Logo Allura"></header>
+<main class="principal">
+    <section class="columna__derecha">
+        <textarea id="texto__traducir" class="texto__problema" placeholder="Ingrese el texto aquí"></textarea>
+         <div class="condiciones">
+            <img class="condiciones__simbol" src="./imagenes/bi_exclamation-circle-fill.png" alt=""/>
+            <p class="condiciones__parrafo">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="boton">
+            <button  class="boton_encriptado" onclick="encriptar()">Encriptar</button>
+            <button class ="boton_desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+        
+    </section>
+    <section class="columna__izquierda">
+        <textarea id="texto__traducido" class="texto__resultado" style="display: none;" readonly></textarea>
+        <img  class="muneco" src="./imagenes/Muñeco.png"   alt="muñeco ejemplo" >
+        <div class="texto__muestra"   >
+            <p class="texto__muestra__negrita" >
+                <Strong>Ningún mensaje fue encontrado</Strong>
+            </p>
+            <p class="texto__muestra__simple" >
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+        </div>
+        
+        <button class="boton__copiar"onclick="copiarTexto()" style="display: none;" >Copiar</button>
+        <span id="mensajeCopiado" style="display:none;">Texto copiado al portapapeles</span>
+    </section>
+    
+</main>
+<footer class="informacion">
+    <p class="informacion_texto">
+    Diseñado por Daniel Lopez
+</p ></footer>
+    <script src="./apps.js"></script>
+</body>
+</html> 

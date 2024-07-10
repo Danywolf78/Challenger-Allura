@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --color-principal: #d8dfe8;
+  --color--secundario: #0a3871;
+  --fuente-Principal: "Inter", sans-serif;
+}
+body {
+  background-color: #d8dfe8;
+}
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.columna__derecha {
+  width: 70%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.columna__izquierda {
+  width: 30%;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  align-items: center;
+  padding: 12px;
+  border: none;
+}
+
+.texto__problema {
+  background-color: var(--color-principal);
+  width: 90%;
+  height: 520px;
+  margin-bottom: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  border: solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  color: var(--color--secundario);
+  font-family: var(--fuente-Principal);
+}
+
+.texto__resultado {
+  width: 90%;
+  height: 520px;
+  margin-bottom: 10px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border: solid #f9f6f6;
+  border-radius: 15px;
+  resize: none;
+}
+
+.condiciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.condiciones__simbol {
+  width: 16px;
+  height: 16px;
+}
+
+.condiciones__parrafo {
+  font-family: var(--fuente-Principal);
+  font-weight: 400;
+  size: 12px;
+  color: #495057;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  height: 55px;
+  gap: 24px;
+  top: 885px;
+  left: 240px;
+  gap: 14px;
+  opacity: 0px;
+}
+
+.boton_encriptado {
+  background-color: var(--color--secundario);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: white;
+  width: 50%;
+  height: 85%;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.boton_desencriptar {
+  background-color: var(--color-principal);
+  font-family: var(--fuente-Principal);
+  font-size: 16px;
+  color: var(--color--secundario);
+  width: 50%;
+  height: 85%;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--color--secundario);
+}
+
+.boton__copiar {
+  background-color: #f9f6f6;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: var(--color--secundario);
+  width: 60%;
+  height: 53px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--color--secundario);
+  padding: 15px 10px;
+}
+.muneco {
+  width: 70%;
+  align-self: center;
+  margin: auto;
+}
+.texto__muestra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+.texto__muestra__negrita {
+  font-family: var(--fuente-Principal);
+  font-size: 16px;
+  color: #495057;
+}
+.texto__muestra__simple {
+  font-family: var(--fuente-Principal);
+  color: #495057;
+}
+.informacion {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color--secundario);
+  margin-top: 30px;
+}
+.informacion_texto {
+  color: rgb(168, 165, 207);
+  font-size: 17px;
+  font-weight: 600;
+  font-family: var(--fuente-Principal);
+}
+
+@media (max-width: 1050px) {
+  
+  .columna__izquierda {
+    height: 450px;
+  }
+
+  
+  .columna__derecha {
+    height: 450px;
+  }
+  .boton__copiar {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .principal {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .columna__derecha {
+    width: 90%; 
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  .boton {
+    width: 95%;
+  }
+
+  .columna__izquierda {
+    width: 90%; 
+  }
+  .muneco {
+    display: none;
+  }
+  .texto__problema,
+  .texto__resultado {
+    width: 100%;
+    height: 100%; 
+      resize: none; 
+  }
+}
+@media (max-width: 370px) {
+  .principal {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .columna__derecha {
+    width: 90%; 
+    height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  .condiciones__parrafo {
+    font-size: 90%;
+  }
+  .boton {
+    width: 210%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .columna__izquierda {
+    width: 90%; 
+  }
+  .muneco {
+    display: none;
+  }
+  .boton__copiar {
+    width: 87%;
+    height: 10%;
+    margin: auto;
+  }
+  .texto__problema,
+  .texto__resultado {
+    width: 100%;
+    height: 100%; 
+    resize: none; 
+  }
+}
